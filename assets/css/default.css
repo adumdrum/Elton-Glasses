@@ -1,0 +1,151 @@
+.sm-body {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: #fff761;
+}
+
+.im-container {
+  position: relative;
+}
+
+@keyframes float {
+  0% {margin-top: 0;}
+  50% {margin-top: 20;}
+  100% {margin-top: 0;}
+}
+
+.float1{
+  animation: float 4s infinite;
+  animation-timing-function: cubic-bezier(.45,.08,.64,.95);
+}
+
+.float2{
+  animation: float 6s infinite;
+  animation-timing-function: cubic-bezier(.45,.08,.64,.95);
+}
+
+.float3{
+  animation: float 5s infinite;
+  animation-timing-function: cubic-bezier(.45,.08,.64,.95);
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  display: block;
+}
+
+.im-glasses {
+  position: fixed;
+}
+
+.im--centre {
+  width: 44%;
+  top: 19.5%;
+  left: 27%
+}
+
+.im--left {
+  width: 30%;
+  top: 28%;
+  left: 1.8%
+}
+
+.im--right {
+  width: 26%;
+  top: 27%;
+  left: 70%
+}
+
+.im-question {
+  width: 35%;
+  position: fixed;
+  bottom: 66%;
+  left: 31%
+}
+
+.im-feeling {
+  width: 22%;
+  position: fixed;
+  top: 73%;
+  left: 38%
+}
+
+
+.im-button {
+  width: 6%;
+  position: fixed;
+  top: 20%;
+  z-index: 100;
+}
+
+.im-button--angry {
+  left: 39%;
+}
+.im-button--numb {
+  left: 46.5%;
+}
+.im-button--happy {
+  left: 54%;
+}
+
+audio {
+  width: 0%;
+  position: absolute;
+  top:auto;
+  left:auto;
+}
+
+
+.sm-body--happy .im-happy {
+  display: block;
+}
+.sm-body--happy .im-numb {
+  display: none;
+}
+.sm-body--happy .im-angry {
+  display: none;
+}
+.sm-body--happy #gradient {
+  width: 100vw;
+  height: 100vh;
+  background-color:#ffffb5;
+  background-image: radial-gradient(#ffffb5,yellow);
+}
+
+
+.sm-body--numb .im-happy {
+  display: none;
+}
+.sm-body--numb .im-numb {
+  display: block;
+}
+.sm-body--numb .im-angry {
+  display: none;
+}
+.sm-body--numb #gradient {
+  width: 100vw;
+  height: 100vh;
+  background-color:#b5ceff;
+  background-image: radial-gradient(#b5ceff,cornflowerblue);
+}
+
+
+.sm-body--angry .im-happy {
+  display: none;
+}
+.sm-body--angry .im-numb {
+  display: none;
+}
+.sm-body--angry .im-angry {
+  display: block;
+}
+.sm-body--angry #gradient {
+  width: 100vw;
+  height: 100vh;
+  background-color:#ff9c9c;
+  background-image: radial-gradient(#ff9c9c,#ff3030);
+}
